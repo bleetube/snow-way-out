@@ -11,3 +11,14 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install --editable .
 ```
+
+### Tests
+
+Export variables for your environment, otherwise the test will prompt you for input.
+
+```sh
+export SNOW_ENDPOINT="https://example.service-now.com"
+export SNOW_API_USERNAME=example
+export SNOW_API_PASSWORD=hunter2
+pytest
+```
